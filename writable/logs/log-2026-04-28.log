@@ -1,0 +1,143 @@
+DEBUG - 2026-04-28 22:14:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-28 22:22:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-28 22:22:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-28 22:23:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-28 22:24:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-04-28 23:08:06 --> Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `usuarios` (`email`, `senha_hash`, `created_at`, `updated_at`) VALUES (\'admin@admin.com\', \'$2y$10$Ke9wVlPf.kVM5zIuEjE3CuxZiO0wmDXFF.PTPcxqZQ3665YToFD76\', \'2026-04-28 23:08:06\', \'2026-04-28 23:08:06\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuarios` (`email`, `senha_hash`, `created_at`, `updated_at`) VALUES (\'admin@admin.com\', \'$2y$10$Ke9wVlPf.kVM5zIuEjE3CuxZiO0wmDXFF.PTPcxqZQ3665YToFD76\', \'2026-04-28 23:08:06\', \'2026-04-28 23:08:06\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuarios` (`email`, `senha_hash`, `created_at`, `updated_at`) VALUES (\'admin@admin.com\', \'$2y$10$Ke9wVlPf.kVM5zIuEjE3CuxZiO0wmDXFF.PTPcxqZQ3665YToFD76\', \'2026-04-28 23:08:06\', \'2026-04-28 23:08:06\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`email`, `senha_hash`, `created_at`, `updated_at`) VALUES (:email:, :senha_hash:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(356): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(898): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(665): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\UsuarioController.php(31): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\UsuarioController->salvarUsuario()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-28 23:08:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+[Method: POST, Route: salvar_usuario]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`email`, `senha_hash`, `created_at`, `updated_at`) VALUES (:email:, :senha_hash:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(356): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(898): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(665): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\UsuarioController.php(31): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\UsuarioController->salvarUsuario()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-28 23:08:06 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuarios` (`email`, `senha_hash`, `created_at`, `updated_at`) VALUES (\'admin@admin.com\', \'$2y$10$Ke9wVlPf.kVM5zIuEjE3CuxZiO0wmDXFF.PTPcxqZQ3665YToFD76\', \'2026-04-28 23:08:06\', \'2026-04-28 23:08:06\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuarios` (`email`, `senha_hash`, `created_at`, `updated_at`) VALUES (\'admin@admin.com\', \'$2y$10$Ke9wVlPf.kVM5zIuEjE3CuxZiO0wmDXFF.PTPcxqZQ3665YToFD76\', \'2026-04-28 23:08:06\', \'2026-04-28 23:08:06\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`email`, `senha_hash`, `created_at`, `updated_at`) VALUES (:email:, :senha_hash:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(356): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(898): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(665): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\UsuarioController.php(31): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\UsuarioController->salvarUsuario()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-28 23:08:06 --> [Caused by] mysqli_sql_exception: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `usuarios` (`email`, `senha_hash`, `created_at`, `updated_at`) VALUES (\'admin@admin.com\', \'$2y$10$Ke9wVlPf.kVM5zIuEjE3CuxZiO0wmDXFF.PTPcxqZQ3665YToFD76\', \'2026-04-28 23:08:06\', \'2026-04-28 23:08:06\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuarios` (`email`, `senha_hash`, `created_at`, `updated_at`) VALUES (\'admin@admin.com\', \'$2y$10$Ke9wVlPf.kVM5zIuEjE3CuxZiO0wmDXFF.PTPcxqZQ3665YToFD76\', \'2026-04-28 23:08:06\', \'2026-04-28 23:08:06\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuarios` (`email`, `senha_hash`, `created_at`, `updated_at`) VALUES (\'admin@admin.com\', \'$2y$10$Ke9wVlPf.kVM5zIuEjE3CuxZiO0wmDXFF.PTPcxqZQ3665YToFD76\', \'2026-04-28 23:08:06\', \'2026-04-28 23:08:06\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`email`, `senha_hash`, `created_at`, `updated_at`) VALUES (:email:, :senha_hash:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(356): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(898): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(665): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\UsuarioController.php(31): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\UsuarioController->salvarUsuario()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2026-04-28 23:10:22 --> Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `usuarios` (`email`, `senha_hash`, `created_at`, `updated_at`) VALUES (\'admin@admin.com\', \'$2y$10$FTxI9fFzr0h286bizFLcU.iEWFrbueewuoa7MtMglS0KctDsVHqle\', \'2026-04-28 23:10:22\', \'2026-04-28 23:10:22\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuarios` (`email`, `senha_hash`, `created_at`, `updated_at`) VALUES (\'admin@admin.com\', \'$2y$10$FTxI9fFzr0h286bizFLcU.iEWFrbueewuoa7MtMglS0KctDsVHqle\', \'2026-04-28 23:10:22\', \'2026-04-28 23:10:22\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuarios` (`email`, `senha_hash`, `created_at`, `updated_at`) VALUES (\'admin@admin.com\', \'$2y$10$FTxI9fFzr0h286bizFLcU.iEWFrbueewuoa7MtMglS0KctDsVHqle\', \'2026-04-28 23:10:22\', \'2026-04-28 23:10:22\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`email`, `senha_hash`, `created_at`, `updated_at`) VALUES (:email:, :senha_hash:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(356): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(898): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(665): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\UsuarioController.php(31): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\UsuarioController->salvarUsuario()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-28 23:10:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+[Method: POST, Route: salvar_usuario]
+in SYSTEMPATH\Database\BaseConnection.php on line 724.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`email`, `senha_hash`, `created_at`, `updated_at`) VALUES (:email:, :senha_hash:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(356): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(898): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(665): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\UsuarioController.php(31): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\UsuarioController->salvarUsuario()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-28 23:10:22 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuarios` (`email`, `senha_hash`, `created_at`, `updated_at`) VALUES (\'admin@admin.com\', \'$2y$10$FTxI9fFzr0h286bizFLcU.iEWFrbueewuoa7MtMglS0KctDsVHqle\', \'2026-04-28 23:10:22\', \'2026-04-28 23:10:22\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuarios` (`email`, `senha_hash`, `created_at`, `updated_at`) VALUES (\'admin@admin.com\', \'$2y$10$FTxI9fFzr0h286bizFLcU.iEWFrbueewuoa7MtMglS0KctDsVHqle\', \'2026-04-28 23:10:22\', \'2026-04-28 23:10:22\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`email`, `senha_hash`, `created_at`, `updated_at`) VALUES (:email:, :senha_hash:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(356): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(898): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(665): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\UsuarioController.php(31): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\UsuarioController->salvarUsuario()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-28 23:10:22 --> [Caused by] mysqli_sql_exception: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('INSERT INTO `usuarios` (`email`, `senha_hash`, `created_at`, `updated_at`) VALUES (\'admin@admin.com\', \'$2y$10$FTxI9fFzr0h286bizFLcU.iEWFrbueewuoa7MtMglS0KctDsVHqle\', \'2026-04-28 23:10:22\', \'2026-04-28 23:10:22\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(769): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuarios` (`email`, `senha_hash`, `created_at`, `updated_at`) VALUES (\'admin@admin.com\', \'$2y$10$FTxI9fFzr0h286bizFLcU.iEWFrbueewuoa7MtMglS0KctDsVHqle\', \'2026-04-28 23:10:22\', \'2026-04-28 23:10:22\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(686): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuarios` (`email`, `senha_hash`, `created_at`, `updated_at`) VALUES (\'admin@admin.com\', \'$2y$10$FTxI9fFzr0h286bizFLcU.iEWFrbueewuoa7MtMglS0KctDsVHqle\', \'2026-04-28 23:10:22\', \'2026-04-28 23:10:22\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`email`, `senha_hash`, `created_at`, `updated_at`) VALUES (:email:, :senha_hash:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(356): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(898): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(665): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\UsuarioController.php(31): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\UsuarioController->salvarUsuario()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+11 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-28 23:11:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-28 23:26:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-04-28 23:26:05 --> ParseError: syntax error, unexpected token "endif", expecting end of file
+[Method: GET, Route: login]
+in APPPATH\Views\pages\auth\login.php on line 15.
+ 1 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('pages/auth/login', [], true)
+ 3 APPPATH\Controllers\UsuarioController.php(38): view('pages/auth/login')
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\UsuarioController->login()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-28 23:26:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-28 23:27:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

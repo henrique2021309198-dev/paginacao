@@ -1,0 +1,93 @@
+CRITICAL - 2026-04-29 00:17:42 --> ParseError: syntax error, unexpected token "<"
+[Method: POST, Route: login]
+in APPPATH\Controllers\UsuarioController.php on line 55.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\paginacao\\app\\Controllers\\UsuarioController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\UsuarioController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\UsuarioController')
+ 4 SYSTEMPATH\Router\Router.php(792): class_exists('\\App\\Controllers\\UsuarioController')
+ 5 SYSTEMPATH\Router\Router.php(230): CodeIgniter\Router\Router->processRouteAttributes()
+ 6 SYSTEMPATH\CodeIgniter.php(829): CodeIgniter\Router\Router->handle('login')
+ 7 SYSTEMPATH\CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-29 00:18:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 00:18:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 00:18:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 00:18:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 00:18:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 00:18:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 00:18:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 00:18:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 00:18:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 00:18:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 00:20:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 00:20:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 00:22:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 00:22:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 00:22:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-04-29 00:23:01 --> ArgumentCountError: Too few arguments to function CodeIgniter\HTTP\RedirectResponse::to(), 0 passed in C:\xampp\htdocs\paginacao\app\Controllers\UsuarioController.php on line 55 and at least 1 expected
+[Method: POST, Route: login]
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 35.
+ 1 APPPATH\Controllers\UsuarioController.php(55): CodeIgniter\HTTP\RedirectResponse->to()
+ 2 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\UsuarioController->autenticar()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-29 00:23:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 00:23:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 00:24:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 00:24:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 00:24:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 00:26:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 00:26:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 00:26:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 00:27:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 00:27:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 00:29:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 00:29:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 00:30:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 00:32:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-04-29 00:38:19 --> ParseError: syntax error, unexpected token "exit"
+[Method: POST, Route: login]
+in APPPATH\Controllers\BaseController.php on line 49.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\paginacao\\app\\Controllers\\BaseController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\BaseController')
+ 3 APPPATH\Controllers\UsuarioController.php(10): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\BaseController')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(315): include_once('C:\\xampp\\htdocs\\paginacao\\app\\Controllers\\UsuarioController.php')
+ 5 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\paginacao\\app\\Controllers\\UsuarioController.php')
+ 6 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\UsuarioController')
+ 7 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\UsuarioController')
+ 8 SYSTEMPATH\Router\Router.php(792): class_exists('\\App\\Controllers\\UsuarioController')
+ 9 SYSTEMPATH\Router\Router.php(230): CodeIgniter\Router\Router->processRouteAttributes()
+10 SYSTEMPATH\CodeIgniter.php(829): CodeIgniter\Router\Router->handle('login')
+11 SYSTEMPATH\CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-29 00:38:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 00:38:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 00:38:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 00:39:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 00:39:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 00:39:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 00:39:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 00:40:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 00:40:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 00:41:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 00:46:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 00:47:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 00:48:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 00:48:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 00:48:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 00:48:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 00:50:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 00:50:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 00:50:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 00:50:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 00:50:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-29 00:50:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

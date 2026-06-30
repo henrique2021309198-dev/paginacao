@@ -1,0 +1,101 @@
+DEBUG - 2026-04-15 00:00:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-15 00:00:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-15 00:00:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-15 00:01:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-15 00:04:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-15 00:05:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-15 00:08:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-15 00:08:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-04-15 00:25:57 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: admin/lanches]
+in APPPATH\Controllers\LancheController.php on line 137.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\paginacao\\app\\Controllers\\LancheController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\LancheController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\LancheController')
+ 4 SYSTEMPATH\Router\Router.php(792): class_exists('\\App\\Controllers\\LancheController')
+ 5 SYSTEMPATH\Router\Router.php(230): CodeIgniter\Router\Router->processRouteAttributes()
+ 6 SYSTEMPATH\CodeIgniter.php(829): CodeIgniter\Router\Router->handle('admin/lanches')
+ 7 SYSTEMPATH\CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-15 00:26:21 --> ParseError: syntax error, unexpected token "}", expecting ";"
+[Method: GET, Route: admin/lanches]
+in APPPATH\Controllers\LancheController.php on line 134.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\paginacao\\app\\Controllers\\LancheController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\LancheController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\LancheController')
+ 4 SYSTEMPATH\Router\Router.php(792): class_exists('\\App\\Controllers\\LancheController')
+ 5 SYSTEMPATH\Router\Router.php(230): CodeIgniter\Router\Router->processRouteAttributes()
+ 6 SYSTEMPATH\CodeIgniter.php(829): CodeIgniter\Router\Router->handle('admin/lanches')
+ 7 SYSTEMPATH\CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-15 00:26:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-15 00:28:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-04-15 00:29:30 --> ErrorException: Undefined property: CodeIgniter\HTTP\Files\UploadedFile::$C:\xampp\tmp\php4B40.tmp
+[Method: POST, Route: admin/lanches/salvar]
+in APPPATH\Controllers\LancheController.php on line 114.
+ 1 APPPATH\Controllers\LancheController.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\HTTP\\Files\\UploadedFile::$C:\\xampp\\tmp\\php4B40.tmp', 'C:\\xampp\\htdocs\\paginacao\\app\\Controllers\\LancheController.php', 114)
+ 2 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\LancheController->salvar()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LancheController))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-15 00:38:29 --> ParseError: syntax error, unexpected token "endforeach"
+[Method: GET, Route: admin/lanches]
+in APPPATH\Views\pages\lanches\index.php on line 87.
+ 1 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('pages/lanches/index', [], true)
+ 3 APPPATH\Controllers\LancheController.php(62): view('pages/lanches/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\LancheController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LancheController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-15 00:41:21 --> ParseError: syntax error, unexpected token "endforeach", expecting "elseif" or "else" or "endif"
+[Method: GET, Route: admin/lanches]
+in APPPATH\Views\pages\lanches\index.php on line 85.
+ 1 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('pages/lanches/index', [], true)
+ 3 APPPATH\Controllers\LancheController.php(62): view('pages/lanches/index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\LancheController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LancheController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-15 00:52:44 --> ParseError: syntax error, unexpected variable "$lanche", expecting "function" or "const"
+[Method: GET, Route: admin/lanches]
+in APPPATH\Controllers\LancheController.php on line 169.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\paginacao\\app\\Controllers\\LancheController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\LancheController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\LancheController')
+ 4 SYSTEMPATH\Router\Router.php(792): class_exists('\\App\\Controllers\\LancheController')
+ 5 SYSTEMPATH\Router\Router.php(230): CodeIgniter\Router\Router->processRouteAttributes()
+ 6 SYSTEMPATH\CodeIgniter.php(829): CodeIgniter\Router\Router->handle('admin/lanches')
+ 7 SYSTEMPATH\CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-15 00:53:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-15 00:53:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-15 00:55:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-15 00:55:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-15 00:56:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-15 00:56:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-15 00:56:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-15 00:56:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-15 00:56:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-15 00:56:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-15 00:57:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-15 00:57:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-15 00:57:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-15 00:58:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-15 00:58:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

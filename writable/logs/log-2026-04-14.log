@@ -1,0 +1,146 @@
+CRITICAL - 2026-04-14 22:50:04 --> ParseError: syntax error, unexpected identifier "novo", expecting variable
+[Method: GET, Route: admin/lanches]
+in APPPATH\Controllers\LancheController.php on line 74.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\paginacao\\app\\Controllers\\LancheController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\LancheController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\LancheController')
+ 4 SYSTEMPATH\Router\Router.php(792): class_exists('\\App\\Controllers\\LancheController')
+ 5 SYSTEMPATH\Router\Router.php(230): CodeIgniter\Router\Router->processRouteAttributes()
+ 6 SYSTEMPATH\CodeIgniter.php(829): CodeIgniter\Router\Router->handle('admin/lanches')
+ 7 SYSTEMPATH\CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-14 22:53:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-04-14 22:53:45 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "template/admin.php"
+[Method: GET, Route: admin/lanches/novo]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(226): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template/admin.php')
+ 2 SYSTEMPATH\View\View.php(254): CodeIgniter\View\View->render('template/admin', [], true)
+ 3 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('pages/lanches/cadastro', [], true)
+ 4 APPPATH\Controllers\LancheController.php(75): view('pages/lanches/cadastro', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\LancheController->novo()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LancheController))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-14 22:54:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-04-14 22:54:25 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "template/admin.php"
+[Method: GET, Route: admin/lanches/novo]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(226): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template/admin.php')
+ 2 SYSTEMPATH\View\View.php(254): CodeIgniter\View\View->render('template/admin', [], true)
+ 3 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('pages/lanches/cadastro', [], true)
+ 4 APPPATH\Controllers\LancheController.php(75): view('pages/lanches/cadastro', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\LancheController->novo()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LancheController))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-14 22:56:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-04-14 22:56:11 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "template/admin.php"
+[Method: GET, Route: admin/lanches/novo]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(226): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template/admin.php')
+ 2 SYSTEMPATH\View\View.php(254): CodeIgniter\View\View->render('template/admin', [], true)
+ 3 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('pages/lanches/cadastro', [], true)
+ 4 APPPATH\Controllers\LancheController.php(75): view('pages/lanches/cadastro', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\LancheController->novo()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LancheController))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-14 22:56:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-04-14 22:56:12 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "template/admin.php"
+[Method: GET, Route: admin/lanches/novo]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(226): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template/admin.php')
+ 2 SYSTEMPATH\View\View.php(254): CodeIgniter\View\View->render('template/admin', [], true)
+ 3 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('pages/lanches/cadastro', [], true)
+ 4 APPPATH\Controllers\LancheController.php(75): view('pages/lanches/cadastro', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\LancheController->novo()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LancheController))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-14 22:56:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-04-14 22:56:17 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "template/admin.php"
+[Method: GET, Route: admin/lanches/novo]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(226): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template/admin.php')
+ 2 SYSTEMPATH\View\View.php(254): CodeIgniter\View\View->render('template/admin', [], true)
+ 3 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('pages/lanches/cadastro', [], true)
+ 4 APPPATH\Controllers\LancheController.php(75): view('pages/lanches/cadastro', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\LancheController->novo()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LancheController))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-14 22:56:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-04-14 22:56:26 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "template/admin.php"
+[Method: GET, Route: admin/lanches/novo]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(226): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('template/admin.php')
+ 2 SYSTEMPATH\View\View.php(254): CodeIgniter\View\View->render('template/admin', [], true)
+ 3 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('pages/lanches/cadastro', [], true)
+ 4 APPPATH\Controllers\LancheController.php(75): view('pages/lanches/cadastro', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\LancheController->novo()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LancheController))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-14 22:58:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 22:58:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-04-14 23:26:42 --> ParseError: syntax error, unexpected token "=>", expecting "]"
+[Method: GET, Route: admin/lanches/novo]
+in APPPATH\Controllers\LancheController.php on line 90.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\paginacao\\app\\Controllers\\LancheController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\LancheController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\LancheController')
+ 4 SYSTEMPATH\Router\Router.php(792): class_exists('\\App\\Controllers\\LancheController')
+ 5 SYSTEMPATH\Router\Router.php(230): CodeIgniter\Router\Router->processRouteAttributes()
+ 6 SYSTEMPATH\CodeIgniter.php(829): CodeIgniter\Router\Router->handle('admin/lanches/novo')
+ 7 SYSTEMPATH\CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-14 23:26:44 --> ParseError: syntax error, unexpected token "=>", expecting "]"
+[Method: GET, Route: admin/lanches]
+in APPPATH\Controllers\LancheController.php on line 90.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\paginacao\\app\\Controllers\\LancheController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\LancheController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\LancheController')
+ 4 SYSTEMPATH\Router\Router.php(792): class_exists('\\App\\Controllers\\LancheController')
+ 5 SYSTEMPATH\Router\Router.php(230): CodeIgniter\Router\Router->processRouteAttributes()
+ 6 SYSTEMPATH\CodeIgniter.php(829): CodeIgniter\Router\Router->handle('admin/lanches')
+ 7 SYSTEMPATH\CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-04-14 23:56:17 --> ParseError: syntax error, unexpected token "=>", expecting "]"
+[Method: GET, Route: admin/lanches]
+in APPPATH\Controllers\LancheController.php on line 90.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\paginacao\\app\\Controllers\\LancheController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\LancheController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\LancheController')
+ 4 SYSTEMPATH\Router\Router.php(792): class_exists('\\App\\Controllers\\LancheController')
+ 5 SYSTEMPATH\Router\Router.php(230): CodeIgniter\Router\Router->processRouteAttributes()
+ 6 SYSTEMPATH\CodeIgniter.php(829): CodeIgniter\Router\Router->handle('admin/lanches')
+ 7 SYSTEMPATH\CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2026-04-14 23:57:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 23:59:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 23:59:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-04-14 23:59:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

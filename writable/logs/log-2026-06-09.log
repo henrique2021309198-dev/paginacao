@@ -1,0 +1,41 @@
+ERROR - 2026-06-09 22:38:25 --> Error connecting to the database: mysqli_sql_exception: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in C:\xampp\htdocs\paginacao\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\paginacao\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'cantina', 3306, '', 0)
+#1 C:\xampp\htdocs\paginacao\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\paginacao\system\Database\BaseConnection.php(880): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\paginacao\system\Database\BaseConnection.php(814): CodeIgniter\Database\BaseConnection->transBegin(false)
+#4 C:\xampp\htdocs\paginacao\app\Controllers\Api\ApiController.php(60): CodeIgniter\Database\BaseConnection->transStart()
+#5 C:\xampp\htdocs\paginacao\system\CodeIgniter.php(951): App\Controllers\Api\ApiController->checkout()
+#6 C:\xampp\htdocs\paginacao\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiController))
+#7 C:\xampp\htdocs\paginacao\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\paginacao\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp\htdocs\paginacao\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp\htdocs\paginacao\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente in C:\xampp\htdocs\paginacao\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\xampp\htdocs\paginacao\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\paginacao\system\Database\BaseConnection.php(880): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\paginacao\system\Database\BaseConnection.php(814): CodeIgniter\Database\BaseConnection->transBegin(false)
+#3 C:\xampp\htdocs\paginacao\app\Controllers\Api\ApiController.php(60): CodeIgniter\Database\BaseConnection->transStart()
+#4 C:\xampp\htdocs\paginacao\system\CodeIgniter.php(951): App\Controllers\Api\ApiController->checkout()
+#5 C:\xampp\htdocs\paginacao\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiController))
+#6 C:\xampp\htdocs\paginacao\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\paginacao\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\paginacao\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#9 C:\xampp\htdocs\paginacao\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#10 {main}
+CRITICAL - 2026-06-09 22:38:25 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente
+[Method: POST, Route: api/checkout]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(880): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseConnection.php(814): CodeIgniter\Database\BaseConnection->transBegin(false)
+ 3 APPPATH\Controllers\Api\ApiController.php(60): CodeIgniter\Database\BaseConnection->transStart()
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Api\ApiController->checkout()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\ApiController))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
