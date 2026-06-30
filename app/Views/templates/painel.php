@@ -129,6 +129,82 @@ $isOnProdutos = str_starts_with($uri, '/admin/produtos');
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    const DEBUG_FLOW = true;
+
+    function logPainel(event, payload = {}) {
+        if (!DEBUG_FLOW) return;
+        console.log(`[Paginacao][Painel] ${event}`, payload);
+    }
+
+    function classifyActionFromPath(path) {
+        if (path.includes('/admin/produtos/salvar')) return 'Salvar produto';
+        if (path.includes('/admin/produtos/excluir/')) return 'Excluir produto';
+        if (path.includes('/admin/produtos/novo')) return 'Abrir cadastro de produto';
+        if (path.includes('/admin/produtos/editar/')) return 'Abrir edicao de produto';
+        if (path.includes('/estoque/adicionar/')) return 'Abrir adicao de estoque';
+        if (path.includes('/estoque/remover/')) return 'Abrir remocao de estoque';
+        if (path.includes('/estoque/salvar')) return 'Salvar movimentacao de estoque';
+        if (path.includes('/usuarios/salvar')) return 'Salvar usuario';
+        if (path.includes('/usuarios/status/')) return 'Bloquear/Desbloquear usuario';
+        if (path.includes('/usuarios/perfil')) return 'Atualizar perfil';
+        return 'Acao geral';
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        logPainel('Pagina carregada', {
+            path: window.location.pathname,
+            query: window.location.search,
+        });
+    });
+
+    document.addEventListener('click', (event) => {
+        const link = event.target.closest('a[href]');
+        if (!link) return;
+
+        const href = link.getAttribute('href') || '';
+        if (!href) return;
+
+        const path = href.startsWith('http')
+            ? new URL(href).pathname
+            : href;
+
+        logPainel('Clique em link', {
+            action: classifyActionFromPath(path),
+            href,
+            text: (link.textContent || '').trim(),
+        });
+    });
+
+    document.addEventListener('submit', (event) => {
+        const form = event.target;
+        if (!(form instanceof HTMLFormElement)) return;
+
+        const action = form.getAttribute('action') || window.location.pathname;
+        const method = (form.getAttribute('method') || 'GET').toUpperCase();
+
+        const data = {};
+        try {
+            const fd = new FormData(form);
+            for (const [key, value] of fd.entries()) {
+                if (key.toLowerCase().includes('senha') || key.toLowerCase().includes('password')) {
+                    data[key] = '[MASKED]';
+                } else {
+                    data[key] = value;
+                }
+            }
+        } catch (error) {
+            data._parseError = true;
+        }
+
+        logPainel('Submit de formulario', {
+            actionLabel: classifyActionFromPath(action),
+            action,
+            method,
+            data,
+        });
+    });
+</script>
 <?= $this->renderSection('scripts') ?>
 </body>
 </html>
